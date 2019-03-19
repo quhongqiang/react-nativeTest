@@ -9,5 +9,6 @@ npm install
 ```
 react-native run-android
 ```
+#需要android studio
 
-#需要android studio 
+#这是一个测试的demo
