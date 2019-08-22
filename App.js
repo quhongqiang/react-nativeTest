@@ -49,7 +49,7 @@ const AppNavigator = createStackNavigator({
     screen: Ac,
   },
 }, {
-    initialRouteName: 'ServiceList',
+    initialRouteName: 'IndexJs',
 });
 
 export default createAppContainer(AppNavigator);

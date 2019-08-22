@@ -1,24 +1,12 @@
 import React, {Component} from 'react';
-import { View, Text, Button, StyleSheet, Switch, TextInput,ScrollView } from 'react-native';
+import { View, Text, Button,Image, StyleSheet, Switch, TextInput,ScrollView,TouchableOpacity } from 'react-native';
 import { StackActions, NavigationActions, withNavigation} from 'react-navigation';
+
+import HeaderView from '../components/headerView'
 
 class AppointmentNumber extends Component {
   static navigationOptions = {
-    headerStyle: {
-      elevation: 0,
-    },
-    headerRight: (
-      <Text></Text>
-    ),
-    headerTitle: '设置预约人数',
-    headerTitleStyle: {
-      flex: 1,
-      textAlign: 'center',
-      alignSelf: 'center',
-      color: '#4a4a4a',
-      fontSize: 17,
-      fontFamily: 'PingFangSC-Medium',
-    },
+    header: null,
   };
   constructor(props) {
     super(props);
@@ -26,11 +14,13 @@ class AppointmentNumber extends Component {
       value: false,  //开关
       number: '', //预约人数
       isTrue: false,
+      orderDown: false,
     };
   }
   render() {
     return (
       <ScrollView>
+      <HeaderView />
         <View style={{backgroundColor: '#f5f5f5'}}>
           <View style={styles.list}>
             <Text style={styles.title} onPress={() => {
