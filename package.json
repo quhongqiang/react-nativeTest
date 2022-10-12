@@ -14,7 +14,7 @@
     "lodash": "^4.17.15",
     "mem": "^5.1.1",
     "react": "16.6.3",
-    "react-native": "0.57.8",
+    "react-native": "0.70.2",
     "react-native-gesture-handler": "^1.0.12",
     "react-native-tab-navigator": "^0.3.4",
     "react-navigation": "^3.0.9",
